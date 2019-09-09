@@ -1,13 +1,66 @@
-.DS_Store
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
+# Database Name
+	dbname=dashboarddb
 
-# Avoid ignoring Maven wrapper jar file (.jar files are usually ignored)
-!/.mvn/wrapper/maven-wrapper.jar
+	# Database HostName - default is localhost
+	dbhost=localhost
+
+	# Database Port - default is 27017
+	dbport=27017
+
+
+
+	# Database Username - default is blank
+	
+	dbusername=dashboarduser
+
+	# Database Password - default is blank
+	
+	dbpassword=dbpassword
+	
+	# Proxy URL
+	
+	github.proxy=10.98.21.24
+	
+	# Proxy Port
+	github.proxyPort=8080
+	
+	# Proxy user if auth is required
+	
+	github.proxyUser=vurugondav
+	
+	# Proxy password if auth is required
+	
+	github.proxyPassword=Pass2016
+	
+	# Logging File location
+	
+	logging.file=./logs/github.log
+
+	# Collector schedule (required)
+	
+	github.cron=0 0/5 * * * *
+
+	github.host=github.com
+
+	# Maximum number of previous days from current date, when fetching commits
+	
+	github.commitThresholdDays=30
+
+	# Optional: Error threshold count after which collector stops collecting for a collector item. Default is 2.
+	
+	github.errorThreshold=1
+
+	# This is the key generated using the Encryption class in core
+	
+	#github.key=<your-generated-key>
+
+	# Personal access token generated from github and used for making authentiated calls
+	
+	github.personalAccessToken=3d18ca6c5cae6e7b1022fa76dbaff9385a8bb0c4
+
+	# Github repository Connect Timeout value in milliseconds, default value is 20000 (20s)
+	
+	github.connectTimeout=40000
+
+	# Github repository Read Timeout value in milliseconds, default value is 20000 (20s) 
+	github.readTimeout=40000
